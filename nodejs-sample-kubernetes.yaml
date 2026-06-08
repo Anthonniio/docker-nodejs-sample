@@ -54,7 +54,7 @@ spec:
   resources:
     requests:
       storage: 10Gi
-  storageClassName: standard
+  #storageClassName: standard
 
 ---
 # ========================================
@@ -175,7 +175,7 @@ spec:
         fsGroup: 1001
       containers:
         - name: todoapp
-          image: ghcr.io/your-username/docker-nodejs-sample:latest
+          image: docker.io/anthonniio/docker-nodejs-sample:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
